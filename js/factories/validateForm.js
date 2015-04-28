@@ -1,6 +1,8 @@
 angular.module('app.factories')
   .factory('validateFactory', function($http){
   var factory = {};
+  this.user = {};
+
   factory.getAll = function(callback){
     $http.get('/api/v1/cities/all').success(callback);
   };
@@ -20,5 +22,10 @@ angular.module('app.factories')
     .success(callback)
     .error(onError);
   };
+
+  factory.setUser = function(user){
+      this.user = user;
+      console.log(this.user.username);
+  }
   return factory;
 });

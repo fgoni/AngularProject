@@ -11,6 +11,10 @@ angular.module('app', [
       .when('/',{
          templateUrl:'partials/main.html',
          controller: 'MyCtrl1'
+      })
+      .when('/logueado', {
+        templateUrl:'partials/logueado.html',
+        controller: 'MyCtrl1'
       });
 }]);
 
