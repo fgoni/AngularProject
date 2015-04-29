@@ -15,10 +15,7 @@ angular.module('app', [
       .when('/logueado', {
         templateUrl:'partials/logueado.html',
         controller: 'MyCtrl1'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
-    }]);
+}]);
 
 
