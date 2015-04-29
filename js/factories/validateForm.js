@@ -22,10 +22,6 @@ angular.module('app.factories')
     .success(callback)
     .error(onError);
   };
-
-  factory.setUser = function(user){
-      this.user = user;
-      console.log(this.user.username);
-  }
+  
   return factory;
 });
