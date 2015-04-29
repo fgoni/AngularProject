@@ -23,5 +23,16 @@ angular.module('app.factories')
     .error(onError);
   };
   
+  factory.exists = function(formInfo, callback, onError){
+    $http.post('exists.php', formInfo)
+    .success(callback)
+    .error(onError);
+  }
+  factory.register = function(formInfo, callback, onError){
+    $http.post('register.php', formInfo)
+    .success(callback)
+    .error(onError);
+  }
+
   return factory;
 });

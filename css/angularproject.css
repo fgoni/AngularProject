@@ -1,3 +1,6 @@
+/* Anchor HREF fix */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 /* Simple NavBar */
 
 

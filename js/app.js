@@ -3,6 +3,7 @@ angular.module('app.factories', []);
 
 angular.module('app', [
   'ngRoute',
+  'ui.bootstrap',
   'app.controllers',
   'app.factories'])
   .config(['$routeProvider',
